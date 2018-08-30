@@ -98,3 +98,13 @@ a{
 #linkaccount{
     margin-left: 100px;
 }
+.profile{
+    background-color:Gainsboro;
+    padding: 100px;    
+    margin:auto;
+    width:30%;
+    margin-top: 150px;
+}
+#textarea{
+    /*width:200px;*/
+}
