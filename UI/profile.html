@@ -1,0 +1,29 @@
+<!Doctype html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="javascript" type="javascript" href="js.js">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+	<div class ="top-nav">
+		<a href="login.html" id="home">logout</a>
+		<a href="#" >FAQ's</a>
+		<a href="#">my profile</a>
+	</div>
+	<div class='myprof'>
+		<div class="centred" id="myprof" >"my activities"</div> <br><br>
+	</div>	
+	<div class="profile" id="prof">
+		<input type="submit" value="view questions" class="signupbtn" id='btn1' onclick="window.location.href='questions.html'" ><br><hr>
+		<input type="submit" value="view answered questions" class="signupbtn" id='btn1'  onclick="window.location.href='#'"><br><hr>
+		<textarea cols="45" rows="auto" id="textarea" placeholder="type your question here"></textarea>
+		<input type="submit" value="post your question" class="signupbtn" id='qbtn'  onclick="myFunction()"><br><hr>
+		<p id="question"></p>
+	</div>
+</body>
+<script>
+function myFunction() {
+    var x = document.getElementById("textarea").value;
+    document.getElementById("question").innerHTML = x;
+}
+</script>
+
+</html>
