@@ -1,0 +1,60 @@
+<!Doctype html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+	<div class="top-right">
+		<a href="index.html">home</a>
+	</div>
+	<div class="account">
+		<form method='POST' value='' action='login.html' name = 'register'>
+			<class='title' id='title'><strong>create an account</strong></class='title'><br><br>
+			<div class='register' Id='register'>
+				<label class='control-label'>First Name</label>
+				<div class ='controls'>
+					<input type='text' name='fname' id = 'fname' required ></br>
+				</div>
+			</div>
+			<div class='register' Id='register'>
+				<label class ='control-label'>Last Name</label>
+				<div class ='controls'>
+					<input type='text' name='lname' id = 'lname' required ></br>
+				</div>
+			</div>
+			<div class ='register' Id='register'>
+				<label class='control-label'>Username</label>
+				<div class ='controls'>
+					<input type='text' Id='username' required ></br>
+				</div>
+			</div>
+			<div class='register' Id='register'>
+				<label class='control-label'>Password</label>
+				<div class='controls'>
+					<input type='password' value='hidden'id = 'password' name='password'required ><br>
+				</div>
+			</div>
+			<div class='register' Id='register'>
+				<label class='control-label'>Repeat Password</label>
+				<div class='controls'>
+					<input type='password' value='hidden' id = 'repeatpassword' name='repeatpassword'required ><br>
+				</div>
+			</div>
+			<div class ='register' Id='register'>
+				<label class='control-label'>Email Adress</label>
+				<div class ='controls'>
+					<input type='email' Id='emailaddress' required ></br>
+				</div>
+			</div>
+			<br><br>
+			<div class="clearfix">
+				<input type="submit" value="sign up" class="signupbtn" id='btn2'><br><a href='login.html' id='loglink'>login</a>
+			</div>
+		</form>
+	</div>
+		<div class='intro'>
+		<div class="centred" id="int" >"Create an account to get connected!"</div> <br><br>
+		<div class="centred" id="post">"it's so easy!"</div><br><br>
+		<div class="centred" id="answer">"Try it!"</div>
+	</div>
+	<script src="register.js"></script>	
+</body>
+</html>
