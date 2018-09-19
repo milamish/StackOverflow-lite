@@ -1,5 +1,5 @@
 <!Doctype html>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="../static/style.css">
 <link rel="javascript" type="javascript" href="js.js">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
@@ -14,10 +14,15 @@
 	<div class="profile" id="prof">
 		<input type="submit" value="view questions" class="signupbtn" id='btn1' onclick="window.location.href='questions.html'" ><br><hr>
 		<input type="submit" value="view answered questions" class="signupbtn" id='btn1'  onclick="window.location.href='#'"><br><hr>
-		<textarea cols="45" rows="auto" id="textarea" placeholder="type your question here"></textarea>
-		<input type="submit" value="post your question" class="signupbtn" id='qbtn'  onclick="myFunction()"><br><hr>
-		<p id="question"></p>
+		<form method ='POST' action="" id = "post">
+			<input type="text" id="qtitle">
+			<textarea cols="45" rows="auto" id="textarea" placeholder="type your question here"></textarea>
+			<input type="submit" value="post your question" class="signupbtn" id='qbtn'  onclick="myFunction()"><br><hr>
+			<p id="question"></p>
+		</form>
+		
 	</div>
+	<script src="../static/postquestion.js"></script>
 </body>
 <script>
 function myFunction() {

@@ -1,8 +1,8 @@
 <!Doctype html>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="../static/style.css">
 <link rel="javascript" type="javascript" href="js.js">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body>
+<body onload="getAllQuestions()">
 	<div class="top-right">
 		<a href="profile.html">home</a>
 		<a href="questions.html">back</a>
@@ -16,23 +16,25 @@
 		<h3>Answer a question from the list below</h3>
 		<input type="text" id="myquery" onkeyup="myQueries()" placeholder="Search for questions" title="questions">
 		<ul id="qlist">
-			<li><a href="#" id="quest" onclick="myAnswer()">are you good with CSS?</a></li>
-			<li><a href="#" id="quest" onclick="myAnswer()">  are you good with HTMl?</a></li>
-	  		<li><a href="#" id="quest" onclick="myAnswer()">What of Javascript?</a></li>
-	  		<li><a href="#" id="quest" onclick="myAnswer()">Who else understands anatomy?</a></li>
-	  		<li><a href="#" id="quest" onclick="myAnswer()">Are there alliens in Kenya?</a></li>
-		</ul>
+				
+        </ul>
+        <ul id="qans">
+				
+        </ul>
 		<p id="ans"><p>
 	</div>
+	<script src="../static/allquestions.js"></script>	
 </body>
+
 <script>
+/*	
 function myAnswer() {
     var answer = prompt("Please enter your answer here", "#");
     if (answer != null) {
         document.getElementById("ans").innerHTML =
         "My answer " + answer + "! you can add more content.";
     }
-}
+}*/
 </script>
 
 <script>

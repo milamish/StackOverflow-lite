@@ -25,12 +25,12 @@ function fetchLogin(event){
         })
         .then((res)=>res.json())
         .then((data) => {
-            if (data["token"]){
-                localStorage.setItem("token", JSON.stringify(data["token"]));
+            if (data.token){
+                localStorage.setItem("token",data.token);
                 window.location.assign("profile.html");
             }
             else {
-                document.getElementById("title").innerText = data["message"];
+                document.getElementById("title").innerText = data.message;
                 console.log(data["message"]);
             }
         })
