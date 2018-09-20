@@ -13,7 +13,8 @@
 			<div class="centred" id="answer">"build knowledge base"</div>
 	</div>
 	<div class="allquestions" id="allqs">
-		<h3>Answer a question from the list below</h3>
+        <h3 id= "aq">Answer a question from the list below</h3>
+        <h2 id="err"></h2>
 		<input type="text" id="myquery" onkeyup="myQueries()" placeholder="Search for questions" title="questions">
 		<ul id="qlist">
 				
@@ -21,37 +22,7 @@
         <ul id="qans">
 				
         </ul>
-		<p id="ans"><p>
 	</div>
 	<script src="../static/allquestions.js"></script>	
 </body>
-
-<script>
-/*	
-function myAnswer() {
-    var answer = prompt("Please enter your answer here", "#");
-    if (answer != null) {
-        document.getElementById("ans").innerHTML =
-        "My answer " + answer + "! you can add more content.";
-    }
-}*/
-</script>
-
-<script>
-function myQueries() {
-    var input, filter, ul, li, a, i;
-    input = document.getElementById("myquery");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("qlist");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-</script>
 </html>

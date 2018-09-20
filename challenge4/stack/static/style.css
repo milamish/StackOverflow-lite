@@ -41,6 +41,15 @@ body{
     text-decoration-color:Azure;
     margin-left: 60px;
 }
+#btn5{
+    width:100%;
+    height:50px;
+    font-family:sans-serif; 
+    font-style:normal;
+    color:Azure;
+    font-size: 1.9vw;
+    text-decoration-color:Azure;
+}
 #qbtn{
     width:60%;
     height:50px;
@@ -95,11 +104,11 @@ input{
 
 }
 #post{
-     position: absolute;
-    top: 15%;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3vw;
+    margin-top:8%;
 
 }
 #answer{
@@ -152,14 +161,14 @@ hr{
     margin-top: 150px;
 }
 #textarea{
-    width:100%;
+    width:70%;
 }
 .allquestions{
-    background-color:Gainsboro;
+    background-color:transparent;
     padding: 100px;    
     margin:auto;
-    width:70%;
-    margin-top: 70px;
+    width:60%;
+    margin-top:4%;
 }
 #allquestions{
     font-size: 15px;
@@ -185,6 +194,10 @@ hr{
     transform: translate(-50%, -50%);
     font-size: 3vw;
 
+}
+#prof{
+    width: 60%;
+    height: 40%;
 }
 .clearfix{
     width:auto;
@@ -262,4 +275,45 @@ p{
 {
     display: block;
     color: blue;
+}
+#qtitle{
+    margin:auto;
+    width:50%;
+    padding: 12px;
+    border: 1px solid wheat;
+    border-radius: 4px;
+    resize: vertical;
+    background-color:white;
+
+}
+#postq{
+    position: absolute;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    margin-top:8%;
+    width: 70%;
+
+}
+.all{
+    background-color:white;
+    width: 80%;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: black;
+    
+}
+#par{
+    font-size: 20px;
+}
+#qlist{
+    width:100%;
+}
+#err{
+    font-size: 15px;
+    font-style: italic;
+    color: red;
+}
+#aq{
+    color: midnightblue;
 }

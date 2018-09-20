@@ -17,13 +17,18 @@ function postQuestion(event){
     .then((data) => {
         console.log(data);
 
-        if(data["message"]==="succesfully registered"){ 
-            window.location.replace("questions.html");  
+        if(data["message"]==="succesfully posted"){ 
+            window.location.replace("allquestions.html");  
         }
         else{
-           document.getElementById("question").innerText =  data.message;
+           document.getElementById("question").innerText = data["message"];
            console.log(data["message"]);
        }
     })
     .catch(error => console.log('error:',error));
 });
+
+function myFunction() {
+    var x = document.getElementById("textarea").value;
+    document.getElementById("question").innerHTML = x;
+}

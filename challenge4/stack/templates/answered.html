@@ -2,10 +2,17 @@
 <link rel="stylesheet" type="text/css" href="../static/style.css">
 <link rel="javascript" type="javascript" href="js.js">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body>
+<body onload = "getAllanswers()">
 	<div class="top-right">
 		<a href="profile.html">home</a>
-		<a href="questions.html">back</a>
-	</div>
+		<a href="allquestions.html">back</a>
+    </div>
+    <div class = "all" id="answered">
+            <ul id="queslist">
+				
+                </ul>
+    <p id= "queans"></p>   
+    </div>
+    <script src="../static/allquestions.js"></script>
 </body>
 </html>
