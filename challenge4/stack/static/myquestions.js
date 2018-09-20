@@ -9,12 +9,13 @@ function getMyQuestions(){
     .then((response)=>response.json())
     .then((data)=>{
         
-        for(let i=0;i<data.questions.length;i++) {
+        for(let i=0;i<data.questions.length; i++) {
             let question = data.questions[i]['question'];
             let title = data.questions[i]['title'];
+            let question_id = data.questions[i]['question_id'];
             //let question_id = data.questions[i]['question_id'];
             output +=`<div class="all" id="par"><h2 id="par">${title}</h2>
-                      <p>${question}</p><hr> </div>`
+                      <p><a id="par"onclick="setQuestionId(${question_id})">${question}</a></p><hr> </div>`
                      
             //output +=`<li><a href="#" id="quest">${question}</a></li>`
             //console.log(data).AllQueries[i]['question']);

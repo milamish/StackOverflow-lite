@@ -15,7 +15,9 @@ function getAllQuestions(){
             let title = data.AllQueries[i]['title'];
             let question_id = data.AllQueries[i]['question_id'];
             output +=`<div class= "all"><h2><a id="par"onclick="setQuestionId(${question_id})">${title}</a></h2>
-                      <p id="para">${question}</p> <hr></div>`
+                      <p id="para">${question}</p> <hr><br>
+                      <input type="submit"value="delete question" id= "dltBTn" onclick="deleteQuestion(${question_id})">
+                      <p id="succesful"></p></div>`;
                      
             //output +=`<li><a href="#" id="quest">${question}</a></li>`
             //console.log(data).AllQueries[i]['question']);
@@ -46,7 +48,7 @@ function getAllanswers(){
                       <p id="queans">${data.questions[i]['answer']}</p> </div>`;
             }
             document.getElementById('queslist').innerHTML = output;
-            
+
         }
         if(data["message"]==="answers are"){ 
             window.location.replace("answered.html");  
@@ -55,7 +57,7 @@ function getAllanswers(){
             window.location.replace("login.html");
         }
         else{
-            document.getElementById("err").innerText = data["message"];
+            document.getElementById("fanser").innerText = data["message"];
         }
         
        
@@ -64,6 +66,34 @@ function getAllanswers(){
 
 });
 }
+
+function deleteQuestion(){
+    let id = localStorage.getItem("question_id");
+    let token = localStorage.getItem("token");
+    fetch('http://127.0.0.1:5000/api/v1/questions/' + id,{
+        method:"DELETE",
+        headers: {"Content-Type":"application/json",'x-access-token': token}
+    })
+    .then((response)=>response.json())
+    .then((data)=>{
+        console.log(data)
+        if(data["message"]==="succesfully deleted"){ 
+            window.location.replace("allquestions.html");  
+        }
+        if (data == ['data']){
+            window.location.replace("login.html");
+        }
+        else{
+            document.getElementById("succesful").innerText = data["message"];
+        }
+        
+       
+        //document.getElementById('queslist').innerHTML = output;
+        //window.location.replace('answered.html')
+
+});
+}
+
 function myQueries() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("myquery");
