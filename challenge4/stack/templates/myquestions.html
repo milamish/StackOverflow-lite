@@ -1,8 +1,13 @@
 <!Doctype html>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="../static/style.css">
 <link rel="javascript" type="javascript" href="js.js">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<boby>
+<body onload="getMyQuestions()">
+		<div class ="top-nav">
+				<a href="login.html" id="home">logout</a>
+				<a href="#" >FAQ's</a>
+				<a href="#">my profile</a>
+			</div>
 	<div class="top-right">
 		<a href="questions.html">back</a>
 		<a href="profile.html">home</a>
@@ -19,12 +24,9 @@
 		<h3>my questions</h3>
 		<input type="text" id="myquery" placeholder="Search for questions" title="questions">
 		<ul id="qlist">
-			<li><a href="#" id="quest" >are you good with CSS?</a></li>
-			<li><a href="#" id="quest" > are you good with HTMl?</a></li>
-	  		<li><a href="#" id="quest" >What of Javascript?</a></li>
-	  		<li><a href="#" id="quest" >Who else understands anatomy?</a></li>
-	  		<li><a href="#" id="quest" >Are there alliens in Kenya?</a></li>
+
 		</ul>
 	</div>
-</boby>
+	<script src="../static/myquestions.js"></script>
+</body>
 </html>

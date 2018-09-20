@@ -1,0 +1,30 @@
+<!Doctype html>
+<link rel="stylesheet" type="text/css" href="../static/style.css">
+<link rel="javascript" type="javascript" href="js.js">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body onload="getAllQuestions()">
+	<div class="top-right">
+		<a href="profile.html">home</a>
+		<a href="questions.html">back</a>
+    </div>
+    <div class ="top-nav">
+            <a href="login.html" id="home">logout</a>
+            <a href="#" >FAQ's</a>
+            <a href="#">my profile</a>
+        </div>
+	<div class='intro'>
+	</div>
+	<div class="allquestions" id="allqs">
+        <h3 id= "aq">Answer a question from the list below</h3>
+        <h2 id="err"></h2>
+		<input type="text" id="myquery" onkeyup="myQueries()" placeholder="Search for questions" title="questions">
+		<ul id="qlist">
+				
+        </ul>
+        <ul id="qans">
+				
+        </ul>
+	</div>
+	<script src="../static/allquestions.js"></script>	
+</body>
+</html>

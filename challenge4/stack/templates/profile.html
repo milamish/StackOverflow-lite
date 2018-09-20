@@ -1,0 +1,26 @@
+<!Doctype html>
+<link rel="stylesheet" type="text/css" href="../static/style.css">
+<link rel="javascript" type="javascript" href="js.js">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+	<div class ="top-nav">
+		<a href="login.html" id="home">logout</a>
+		<a href="#" >FAQ's</a>
+		<a href="#">my profile</a>
+	</div>	
+	<div class="profile" id="prof">
+		<input type="submit" value="view questions" class="signupbtn" id='btn1' onclick="window.location.href='questions.html'" ><br><br><hr>
+		<form method ='POST' action="" id = "postq">
+			<div id="postquery">
+			<input type="text" id="qtitle" placeholder="question title"><br><br>
+			<textarea cols="45" rows="auto" id="textarea" placeholder="type your question here"></textarea><br>
+			<input type="submit" value="post your question" class="signupbtn" id='qbtn'  onclick="myFunction()"><br><hr>
+			<p id="question"></p>
+		</div>
+		</form>
+		
+	</div>
+	<script src="../static/postquestion.js"></script>
+</body>
+
+</html>
