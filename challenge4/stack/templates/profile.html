@@ -7,17 +7,16 @@
 		<a href="login.html" id="home">logout</a>
 		<a href="#" >FAQ's</a>
 		<a href="#">my profile</a>
-	</div>
-	<div class='myprof'>
-		<div class="centred" id="myprof" >"my activities"</div> <br><br>
 	</div>	
 	<div class="profile" id="prof">
-		<input type="submit" value="view questions" class="signupbtn" id='qbtn' onclick="window.location.href='questions.html'" ><br><hr>
+		<input type="submit" value="view questions" class="signupbtn" id='btn1' onclick="window.location.href='questions.html'" ><br><br><hr>
 		<form method ='POST' action="" id = "postq">
+			<div id="postquery">
 			<input type="text" id="qtitle" placeholder="question title"><br><br>
-			<textarea cols="45" rows="auto" id="textarea" placeholder="type your question here"></textarea>
+			<textarea cols="45" rows="auto" id="textarea" placeholder="type your question here"></textarea><br>
 			<input type="submit" value="post your question" class="signupbtn" id='qbtn'  onclick="myFunction()"><br><hr>
 			<p id="question"></p>
+		</div>
 		</form>
 		
 	</div>

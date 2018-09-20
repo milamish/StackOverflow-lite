@@ -14,10 +14,10 @@ function getAllanswers(){
         console.log(data)
         for(let i=0;i<data.questions.length;i++){
             let question = data.questions[i]['question'];
-            let answer = data.AllQueries[i]['answer'];
-            //let question_id = data.AllQueries[i]['question_id'];
-            output +=`<div id= "answered"><h2>${question})</h2>
-                      <p>${answer}</p> </div>`
+            let answer = data.questions[i]['answer'];
+            let question_id = data.AllQueries[i]['question_id'];
+            output +=`<div id= "answered"><ul><li><h2>${question})</h2>
+                      <p>${answer}</p></li></ul> </div>`
                      
             //output +=`<li><a href="#" id="quest">${question}</a></li>`
             //console.log(data.AllQueries[i]['question']);

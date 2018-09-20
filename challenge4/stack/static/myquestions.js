@@ -13,8 +13,8 @@ function getMyQuestions(){
             let question = data.questions[i]['question'];
             let title = data.questions[i]['title'];
             //let question_id = data.questions[i]['question_id'];
-            output +=`<div class="all" id="par"><h2>${title}</h2>
-                      <p>${question}</p> </div>`
+            output +=`<div class="all" id="par"><h2 id="par">${title}</h2>
+                      <p>${question}</p><hr> </div>`
                      
             //output +=`<li><a href="#" id="quest">${question}</a></li>`
             //console.log(data).AllQueries[i]['question']);

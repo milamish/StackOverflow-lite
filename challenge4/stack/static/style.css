@@ -1,5 +1,5 @@
 body{
-    background-image: url(images/query5.jpg);
+   /* background-image: url(images/query5.jpg);*/
     background-blend-mode: transparent;
     /*background-repeat:repeat-x;*/
     height:600px;
@@ -58,7 +58,8 @@ body{
     color:Azure;
     font-size: 1.5vw;
     text-decoration-color:Azure;
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-top: 10%;
 }
 input{
     margin:auto;
@@ -128,7 +129,7 @@ input{
 
 }
 .top-right {
-    margin-top: 30px;
+    margin-top: 100px;
     margin-right: 50px;
     position: absolute;
     top: 8px;
@@ -145,7 +146,7 @@ h5{
     color:DimGrey;
 }
 hr{
-    margin-left:3%;
+    margin-left:0%;
 }
 .or{
     position:absolute;
@@ -155,13 +156,16 @@ hr{
 }
 .profile{
     background-color:Gainsboro;
-    padding: 100px;    
+    padding: 20px;    
     margin:auto;
     width:30%;
     margin-top: 150px;
 }
 #textarea{
     width:70%;
+    position: fixed;
+    resize: none;
+    height: 100px;
 }
 .allquestions{
     background-color:transparent;
@@ -207,7 +211,7 @@ hr{
 .top-nav {
     background-color:black;
     overflow: hidden;
-    width:50%;
+    width:90%;
     position: absolute;
     top: 8%;
     left: 50%;
@@ -287,24 +291,24 @@ p{
 
 }
 #postq{
-    position: absolute;
+    position: fixed;
     left: 56%;
     transform: translate(-50%, -50%);
     font-size: 3vw;
-    margin-top:8%;
+    margin-top:10%;
     width: 70%;
 
 }
 .all{
-    background-color:white;
+    /*background-color:white;*/
     width: 80%;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-color: black;
     
 }
 #par{
-    font-size: 20px;
+    font-size: 18px;
 }
 #qlist{
     width:100%;
@@ -316,4 +320,25 @@ p{
 }
 #aq{
     color: midnightblue;
+}
+#queslist{
+    margin-top: 120px;
+    margin-left: auto;
+}
+#answered{
+    margin-left:15%; 
+    width: 70%;
+}
+#abtn{
+    width: 30%;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+#postans{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+#question{
+    font-size: 18px;
+    color:darkred;
 }

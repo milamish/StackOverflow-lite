@@ -15,7 +15,7 @@ function getAllQuestions(){
             let title = data.AllQueries[i]['title'];
             let question_id = data.AllQueries[i]['question_id'];
             output +=`<div class= "all"><h2><a id="par"onclick="setQuestionId(${question_id})">${title}</a></h2>
-                      <p id="para">${question}</p> </div>`
+                      <p id="para">${question}</p> <hr></div>`
                      
             //output +=`<li><a href="#" id="quest">${question}</a></li>`
             //console.log(data).AllQueries[i]['question']);
@@ -41,15 +41,12 @@ function getAllanswers(){
         console.log(data)
         let output = '';
         {
-           
-            //let question_id = data.AllQueries[i]['question_id'];
             for(let i=0;i<data.questions.length;i++){
             output +=`<div class="answers">
                       <p id="queans">${data.questions[i]['answer']}</p> </div>`;
             }
             document.getElementById('queslist').innerHTML = output;
-            //output +=`<li><a href="#" id="quest">${question}</a></li>`
-            //console.log(data.AllQueries[i]['question']);
+            
         }
         if(data["message"]==="answers are"){ 
             window.location.replace("answered.html");  
