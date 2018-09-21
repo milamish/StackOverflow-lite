@@ -15,7 +15,7 @@ function getAllQuestions(){
             let title = data.AllQueries[i]['title'];
             let question_id = data.AllQueries[i]['question_id'];
             output +=`<div class= "all"><h2><a id="par"onclick="setQuestionId(${question_id})">${title}</a></h2>
-                      <p id="para">${question}</p> <hr><br>
+                      <p id="para"><a id="par"onclick="setQuestionId(${question_id})">${question}</a></p> <hr><br>
                       <input type="submit"value="delete question" id= "dltBTn" onclick="deleteQuestion(${question_id})">
                       <p id="succesful"></p></div>`;
                      

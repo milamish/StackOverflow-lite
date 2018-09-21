@@ -10,7 +10,6 @@ body{
     margin-right:auto;
     overflow-x: hidden;
     overflow-wrap: hidden;
-    
   }
   .account{
 	background-color:Gainsboro;
@@ -18,6 +17,7 @@ body{
     margin:auto;
     width:30%;
     margin-top: 200px;
+   
  }
  #btn1{
     /*margin:auto;*/
@@ -30,6 +30,7 @@ body{
     text-decoration-color: cornsilk;
     text-overflow:wrap;
     background-color:grey;
+    margin-top: 3%;
 }
 #btn2{
     width:60%;
@@ -49,6 +50,7 @@ body{
     color:Azure;
     font-size: 1.9vw;
     text-decoration-color:Azure;
+    margin-top:15%;
 }
 #qbtn{
     width:60%;
@@ -96,7 +98,7 @@ input{
     text-shadow: 3px 1px Azure; 
     }
 #heading{
-    font-size: 5vw;
+    font-size: 4vw;
     color:MidnightBlue;
     font-family: Trebuchet-Ms;
     font-style:normal;
@@ -109,7 +111,7 @@ input{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3vw;
-    margin-top:8%;
+    margin-top:3%;
 
 }
 #answer{
@@ -182,14 +184,16 @@ hr{
 }
 #myquery{
     margin:auto;
-    width:70%;
+    width:78%;
     padding: 12px;
     border: 1px solid wheat;
     border-radius: 4px;
     resize: vertical;
     background-color:white;
     margin-left:40px;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    border-radius: 50px;
+    
 }
 #quest{
     font-size: 17px;
@@ -203,7 +207,7 @@ hr{
 
 }
 #prof{
-    width: 60%;
+    width: 65%;
     height: 50%;
     position: fixed;
     margin-left:180px;

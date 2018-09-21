@@ -14,7 +14,7 @@ function getMyQuestions(){
             let title = data.questions[i]['title'];
             let question_id = data.questions[i]['question_id'];
             //let question_id = data.questions[i]['question_id'];
-            output +=`<div class="all" id="par"><h2 id="par">${title}</h2>
+            output +=`<div class="all" id="par"><h2 id="par"><a id="par"onclick="setQuestionId(${question_id})">${title}</a></h2>
                       <p><a id="par"onclick="setQuestionId(${question_id})">${question}</a></p><hr> </div>`
                      
             //output +=`<li><a href="#" id="quest">${question}</a></li>`

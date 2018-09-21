@@ -16,8 +16,7 @@ function getAllanswers(){
             let question = data.questions[i]['question'];
             let answer = data.questions[i]['answer'];
             let answer_id = data.questions[i]['answer_id'];
-            let question_id = data.AllQueries[i]['question_id'];
-            output +=`<div id= "answered"><h2>${question}</a></h2>
+            output +=`<div class= "all"><h1>${answer_id}</h1><h2>${question}</h2>
                       <h1><a id="queans"onclick="setAnswerId(${answer_id})">${answer}</a></h1><hr>
                       <input type="submit"value="delete question" id= "dltBTn" onclick="(${answer_id})"></div>`;
                      
