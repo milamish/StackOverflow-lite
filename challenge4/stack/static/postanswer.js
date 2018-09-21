@@ -3,7 +3,7 @@ function postAnswer(){
     let token = localStorage.getItem("token");
     let route = "http://127.0.0.1:5000/api/v1/"; 
 
-    document.getElementById("abtn").addEventListener("click",
+    document.getElementById("pbtn").addEventListener("click",
 function postQuestion(event){
     event.preventDefault();
     let url = route+'questions/'+id+'/answers'

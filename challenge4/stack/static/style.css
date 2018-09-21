@@ -9,8 +9,8 @@ body{
     margin-left:auto;
     margin-right:auto;
     overflow-x: hidden;
-    overflow-y:;
     overflow-wrap: hidden;
+    
   }
   .account{
 	background-color:Gainsboro;
@@ -58,7 +58,7 @@ body{
     color:Azure;
     font-size: 1.5vw;
     text-decoration-color:Azure;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 10%;
 }
 input{
@@ -141,6 +141,7 @@ a{
 }
 h3{
     margin-top: 2px;
+    margin-left:37px;
 }
 h5{
     color:DimGrey;
@@ -168,11 +169,13 @@ hr{
     height: 100px;
 }
 .allquestions{
-    background-color:transparent;
+    background-color:lightgrey;
     padding: 100px;    
     margin:auto;
-    width:60%;
-    margin-top:4%;
+    width:70%;
+    margin-top:10%;
+    border: 2px solid midnightblue;
+    border-radius: 50px;
 }
 #allquestions{
     font-size: 15px;
@@ -185,7 +188,7 @@ hr{
     border-radius: 4px;
     resize: vertical;
     background-color:white;
-    margin-left:30px;
+    margin-left:40px;
     font-size: 2vw;
 }
 #quest{
@@ -201,7 +204,9 @@ hr{
 }
 #prof{
     width: 60%;
-    height: 40%;
+    height: 50%;
+    position: fixed;
+    margin-left:180px;
 }
 .clearfix{
     width:auto;
@@ -300,18 +305,27 @@ p{
 
 }
 .all{
-    /*background-color:white;*/
-    width: 80%;
+    background-color:white;
+    width: 90%;
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-color: black;
-    
+    border: 5px lightgrey;
+    padding: 25px yellow;  
+    border-radius: 5px;
+    border-color: midnightblue;
+    cursor: pointer;
+}
+qlist.hover{
+    background-color: yellow;
 }
 #par{
     font-size: 18px;
 }
 #qlist{
-    width:100%;
+    width:90%;
+    background-color:transparent;
+    border: 2px solid transparent;
+    border-radius: 25px;
 }
 #err{
     font-size: 15px;
@@ -322,23 +336,44 @@ p{
     color: midnightblue;
 }
 #queslist{
-    margin-top: 120px;
+    margin-top: 30px;
     margin-left: auto;
 }
 #answered{
+    margin-top:10%;
     margin-left:15%; 
     width: 70%;
 }
 #abtn{
     width: 30%;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-left: 15%;
 }
 #postans{
-    margin-top: 10%;
+    margin-top: 8%;
     margin-left: 10%;
+    position: fixed;
+    
 }
 #question{
     font-size: 18px;
     color:darkred;
+}
+#pbtn{
+    width: 20%;
+    margin-top: 10%;
+    position:fixed;
+}
+#postquery{
+    margin-top:5%;
+}
+#answers{
+    margin-left: 0px;
+    color:midnightblue;
+}
+#dltBTn{
+    width: 40%;
+}
+#succesful{
+    color: red;
 }
